@@ -32,13 +32,13 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
-1. What is the difference between an adaptive website and a fully responsive website?
+1. What is the difference between an adaptive website and a fully responsive website? the difference is the method they use too account for people on different divices. 
 
-2. Describe what it means to be mobile first vs desktop first. scaling up instead of down 
+2. Describe what it means to be mobile first vs desktop first. scaling up instead of down? i would think the px ratio is different so i would need an media quiery to accont for the change of screen size but which ever on i did frist would need its personal adaptation to the other. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units? it sets them to vaules of 10
 
-4. How would you describe preprocessing to someone new to CSS?
+4. How would you describe preprocessing to someone new to CSS?Divide and Conquer. no sure if you wanted a more techie answer but that really the frist thing i would say and then break down how to do that.  
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble? media quires , mixing
 
