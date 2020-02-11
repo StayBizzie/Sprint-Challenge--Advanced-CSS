@@ -1,5 +1,9 @@
-.my-font {
-  color: red;
+.flex-custom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -212,11 +216,11 @@ footer {
   width: 100%;
 }
 @media (max-width: 500px) {
-  .home .launch .launch {
+  .home .space-images .blast .sky .launch {
     display: none ;
   }
 }
-.home .launch img {
+.home .space-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;

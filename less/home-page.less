@@ -1,37 +1,37 @@
-// Home Content
+@import "variables";
+@import "mixins";
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    }
-.launch{
-  @media  (max-width: 500px) {
-  .launch {
-    display:none ;
-  }
-}
-
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+    }
+
+    @media @phone {
+      .launch,
+      .sky {
+        display: none;
+      }
+      .blast {
+        width: 100%;
+      }
     }
   }
 
@@ -54,6 +54,11 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      //my live server won't update, I can't tell if I should nest this somewhere else!
+      flex-direction: column-reverse;
+    }
+
     .walk-text {
       width: 50%;
 
@@ -66,18 +71,32 @@
       }
 
       .btn {
-      }
-    }
+        .btn-styling(black, white, black);
+        font-size: 2rem;
+        width: 30%;
+        padding: 1.5% 0% 1.5% 0%;
+        text-align: center;
+        border-radius: 7%;
 
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
+        &:hover {
+          //not sure if this is working, live server seems to be having a delay
+          .btn-styling(white, black);
+        }
+
+        @media @phone {
+        }
+      }
+
+      .walk-img {
+        width: 46%;
+        margin-left: 4%;
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+        }
       }
     }
   }
-}// home
+}
